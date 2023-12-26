@@ -25,13 +25,13 @@ public class Animal {
         return "This animal is mostly " + color + 
         ". It has " + numberOfPaws + " " + paw + " and " + fur + " fur.";
     }
-    public String getColor() {
+    String getColor() {
         return color;
     }
-    public int getNumberOfPaws() {
+    int getNumberOfPaws() {
         return numberOfPaws;
     }
-    public boolean getHasFur() {
+    boolean getHasFur() {
         return hasFur;
     }
 }
