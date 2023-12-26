@@ -23,6 +23,6 @@ public class Animal {
             fur = "no";
         }
         return "This animal is mostly " + color + 
-        " It has " + numberOfPaws + " " + paw + " and " + fur + " fur.";
+        ". It has " + numberOfPaws + " " + paw + " and " + fur + " fur.";
     }
 }
