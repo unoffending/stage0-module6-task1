@@ -12,7 +12,7 @@ public class Animal {
         this.hasFur = hasFur;
     }
     
-    String getDescription() {
+    protected String getDescription() {
         String paws;
         String fur;
         if(numberOfPaws == 1) {
