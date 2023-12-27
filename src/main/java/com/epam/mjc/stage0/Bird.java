@@ -4,20 +4,21 @@ public class Bird extends Animal {
     Bird() {
         super("blue", 2, false);
     }
-        String getDescription(Bird bird) {
+        @Override
+        String getDescription() {
         String paw;
-        if(bird.getNumberOfPaws() == 1) {
+        if(getNumberOfPaws() == 1) {
             paw = "paw";
         } else {
             paw = "paws";
         }
         String fur;
-        if(bird.getHasFur() == true) {
+        if(getHasFur() == true) {
             fur = "a";
         } else {
             fur = "no";
         }
-        return "This animal is mostly " + bird.getColor() +
-        ". It has " + bird.getNumberOfPaws() + " " + paw + " and " + fur + " fur. Moreover, it has 2 wings and can fly.";
+        return "This animal is mostly " + getColor() +
+        ". It has " + getNumberOfPaws() + " " + paw + " and " + fur + " fur. Moreover, it has 2 wings and can fly.";
         }
 }
