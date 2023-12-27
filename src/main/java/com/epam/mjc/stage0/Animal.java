@@ -1,7 +1,7 @@
 package com.epam.mjc.stage0;
 
 public class Animal {
-    private String color;
+   private String color;
     private int numberOfPaws;
     private boolean hasFur;
     Animal(String color, int numberOfPaws, boolean hasFur) {
@@ -17,21 +17,22 @@ public class Animal {
             paw = "paws";
         }
         String fur;
-        if(hasFur == true) {
+        if(hasFur) {
             fur = "a";
         } else {
             fur = "no";
         }
-        return "This animal is mostly " + color + 
+        return "This animal is mostly " + color +
         ". It has " + numberOfPaws + " " + paw + " and " + fur + " fur.";
     }
-    String getColor() {
+
+    public String getColor() {
         return color;
     }
-    int getNumberOfPaws() {
+    public int getNumberOfPaws() {
         return numberOfPaws;
     }
-    boolean getHasFur() {
+    public boolean getHasFur() {
         return hasFur;
     }
 }
