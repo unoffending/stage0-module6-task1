@@ -1,9 +1,15 @@
 package com.epam.mjc.stage0;
 
-public class Dog extends Animal{
+public class Dog extends Animal {
 
-    Dog() {
-        super("brown", 4, true);
+    public Dog() {
+
+        super.setColor("brown");
+
+        super.setNumberOfPaws(4);
+
+        super.setHasFur(true);
+
     }
-    
+
 }
